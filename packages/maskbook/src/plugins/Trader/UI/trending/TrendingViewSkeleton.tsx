@@ -31,7 +31,7 @@ export function TrendingViewSkeleton(props: TrendingViewSkeletonProps) {
             />
             <CardContent className={classes.content}>
                 <Skeleton animation="wave" variant="rect" height={58} style={{ marginBottom: 8 }} />
-                <Skeleton animation="wave" variant="rect" height={254} />
+                <Skeleton animation="wave" variant="rect" height={269} />
             </CardContent>
             <CardActions className={classes.footer}>
                 <Skeleton animation="wave" height={10} width="30%" />

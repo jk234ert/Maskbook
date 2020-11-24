@@ -3,7 +3,6 @@ import { UniswapIcon } from '../../../../resources/UniswapIcon'
 import { ZRXIcon } from '../../../../resources/ZRXIcon'
 import { unreachable } from '../../../../utils/utils'
 import { TradeProvider } from '../../types'
-
 export interface TradeProviderIconProps {
     provider: TradeProvider
 }

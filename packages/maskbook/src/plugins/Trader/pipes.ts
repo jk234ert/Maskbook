@@ -12,9 +12,9 @@ export function resolveCurrencyName(currency: Currency) {
 export function resolveDataProviderName(dataProvider: DataProvider) {
     switch (dataProvider) {
         case DataProvider.COIN_GECKO:
-            return 'Coin Gecko'
+            return 'CoinGecko'
         case DataProvider.COIN_MARKET_CAP:
-            return 'Coin Market Cap'
+            return 'CoinMarketCap'
         default:
             unreachable(dataProvider)
     }
@@ -34,7 +34,7 @@ export function resolveDataProviderLink(dataProvider: DataProvider) {
 export function resolveTradeProviderName(tradeProvider: TradeProvider) {
     switch (tradeProvider) {
         case TradeProvider.UNISWAP:
-            return 'Uniswap'
+            return 'Uniswap V2'
         case TradeProvider.ZRX:
             return 'ZRX (0x)'
         case TradeProvider.ONE_INCH:

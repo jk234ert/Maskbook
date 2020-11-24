@@ -97,7 +97,7 @@ export function SettingsDialog(props: SettingsDialogProps) {
                 <Paper component="section" elevation={0}>
                     <Card elevation={0}>
                         <CardContent>
-                            <Accordion className={classes.accordion} elevation={0} expanded>
+                            <Accordion className={classes.accordion} elevation={0}>
                                 <AccordionSummary>
                                     <Typography className={classes.heading}>Provider</Typography>
                                     <Typography className={classes.subheading}>
@@ -108,7 +108,7 @@ export function SettingsDialog(props: SettingsDialogProps) {
                                     <SelectProviderPanel value={provider} onChange={setProvider} />
                                 </AccordionDetails>
                             </Accordion>
-                            <Accordion className={classes.accordion} elevation={0} expanded>
+                            <Accordion className={classes.accordion} elevation={0}>
                                 <AccordionSummary>
                                     <Typography className={classes.heading}>Slippage Tolerance</Typography>
                                     <Typography className={classes.subheading}>{slippage / 100}%</Typography>
@@ -118,7 +118,7 @@ export function SettingsDialog(props: SettingsDialogProps) {
                                 </AccordionDetails>
                             </Accordion>
                             {provider === TradeProvider.ZRX ? (
-                                <Accordion className={classes.accordion} elevation={0} expanded>
+                                <Accordion className={classes.accordion} elevation={0}>
                                     <AccordionSummary>
                                         <Typography className={classes.heading}>Exchanges</Typography>
                                         <Typography className={classes.subheading}>{listOfSource.length}</Typography>

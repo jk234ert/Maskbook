@@ -20,6 +20,7 @@ import { ERC20TokenDetailed, EthereumTokenType, EtherTokenDetailed } from '../..
 import TuneIcon from '@material-ui/icons/Tune'
 import { currentSlippageTolerance } from '../../settings'
 import { PluginTraderMessages } from '../../messages'
+import { toPercentage } from '../../helpers'
 
 const useStyles = makeStyles((theme: Theme) => {
     return createStyles({
@@ -210,8 +211,8 @@ export function TradeForm(props: TradeFormProps) {
             ))}
             <div className={classes.section}>
                 <Box display="flex" alignItems="center" justifyContent="space-between">
-                    <Typography variant="subtitle2">
-                        Slippage Tolerance: {currentSlippageTolerance.value / 1000}%
+                    <Typography color="textSecondary" variant="body2">
+                        Slippage Tolerance: {toPercentage(currentSlippageTolerance.value)}
                     </Typography>
                     <IconButton size="small">
                         <TuneIcon fontSize="small" onClick={() => setSwapSettingsDialogOpen({ open: true })} />
