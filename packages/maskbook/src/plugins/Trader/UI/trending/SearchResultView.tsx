@@ -80,7 +80,7 @@ export function SearchResultView(props: SearchResultViewProps) {
     //#endregion
 
     //#region stats
-    const [days, setDays] = useState(Days.ONE_YEAR)
+    const [days, setDays] = useState(Days.ONE_WEEK)
     const { value: stats = [], loading: loadingStats } = usePriceStats({
         coinId: trending?.coin.id,
         dataProvider: trending?.dataProvider,
