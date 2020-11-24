@@ -10,9 +10,11 @@ const TRUST_WALLET_ASSETS = 'https://raw.githubusercontent.com/trustwallet/asset
 // Using the result of `formatChecksumAddress(TokenAddress)` directly to reduce calculation
 const ETH_ADDRESS = getConstant(CONSTANTS, 'ETH_ADDRESS')
 const CRUST_ADDRESS = '0x32a7C02e79c4ea1008dD6564b35F131428673c41'
+const NEST_ADDRESS = '0x04abEdA201850aC0124161F037Efd70c74ddC74C'
 
 const ICON_MAP = {
     [CRUST_ADDRESS]: 'https://s2.coinmarketcap.com/static/img/coins/64x64/6747.png',
+    [NEST_ADDRESS]: 'https://s2.coinmarketcap.com/static/img/coins/64x64/5841.png',
     [ETH_ADDRESS]: `${TRUST_WALLET_ASSETS}/info/logo.png`,
 }
 
